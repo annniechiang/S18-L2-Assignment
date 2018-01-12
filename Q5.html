@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/Q5.js"></script>
+  </head>
+  <body>
+    <div class="container1">
+      <form class="todo-input">
+        <h1 class="todo-title">待辦事項</h1>
+        <input type="text" id="input">
+        <input type="radio" name="status" id="radio1" checked=true>緊急
+        <input type="radio" name="status" id="radio2">不緊急
+        <input type="button" id="create" value="+" onclick="createToDo()">
+        <!-- <button onclick="createToDo()"> + </button> --> <!-- 此寫法會造成 render -->
+      </form>
+      <hr id="hr">       
+      <div id="todolist"></div>
+    </div>
+  </body>
+</html>
